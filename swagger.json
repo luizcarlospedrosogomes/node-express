@@ -1,0 +1,35 @@
+{
+  "info": {
+    "title": "API Documentation",
+    "version": "1.0.0",
+    "description": "API documentation description",
+    "host": "/api"
+  },
+  "swagger": "2.0",
+  "paths": {
+    "/api/products": {
+      "get": {
+        "tags": [
+          "List"
+        ],
+        "description": "list product",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Return saved user"
+          },
+          "404": {
+            "description": "Not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {},
+  "responses": {},
+  "parameters": {},
+  "securityDefinitions": {},
+  "tags": []
+}
