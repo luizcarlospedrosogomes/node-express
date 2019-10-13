@@ -8,7 +8,7 @@ const swaggerDocument = require('./../swagger.json');
 
 const auth    =  require('./middlewares/auth');
 
-routes.use('/docs',auth, swaggerUi.serve);
+routes.use('/docs', swaggerUi.serve);
 routes.get('/docs', swaggerUi.setup(swaggerDocument));
 routes.get('/products', ProductController.index);
 //with authentication
