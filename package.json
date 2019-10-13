@@ -6,7 +6,7 @@
   "start": "node index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npm run swagger && nodemon server.js",
+    "dev": "npm run swagger && nodemon index.js",
     "swagger": "swagger-jsdoc -d swaggerDef.js -o swagger.json"
   },
   "keywords": [],
